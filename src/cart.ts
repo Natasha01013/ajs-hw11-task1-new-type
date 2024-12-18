@@ -3,7 +3,7 @@ import Movie from './film';
 export default class Cart {
     //массив типа Movie[], который хранит все добавленные фильмы
     //private - масиив не доступен напрямую извне, доступ к нему только через методы класса Cart
-    items: Movie[] = [];
+    private items: Movie[] = [];
 
     //добавляет новый фильм в корзину 
     addMovie(movie: Movie): void {

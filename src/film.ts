@@ -1,5 +1,3 @@
-//import Buyable from './buyable';
-
 export default class Movie  {
     name: string;
     years: number;
