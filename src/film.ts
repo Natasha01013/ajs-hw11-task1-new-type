@@ -1,25 +1,27 @@
 export default class Movie  {
-    name: string;
-    years: number;
-    country: string;
-    slogan: string;
-    genre: string;
-    time: number;
+    // при использовани TypeScript в конструкторе, конструкция ниже не нужна, но в параметрах constructor указываем readonly
+    // name: string;
+    // years: number;
+    // country: string;
+    // slogan: string;
+    // genre: string;
+    // time: number;
 
     constructor(
-        name: string,
-        years: number,
-        country: string,
-        slogan: string,
-        genre: string,
-        time: number,
+        readonly name: string,
+        readonly years: number,
+        readonly country: string,
+        readonly slogan: string,
+        readonly genre: string,
+        readonly time: number,
     ) {
-        this.name = name;
-        this.years = years;
-        this.country = country;
-        this.slogan = slogan;
-        this.genre = genre;
-        this.time = time;
+        // из-за использования TypeScript конструкция ниже не нужна, но в параметрах constructor указываем readonly
+        // this.name = name;
+        // this.years = years;
+        // this.country = country;
+        // this.slogan = slogan;
+        // this.genre = genre;
+        // this.time = time;
     }
 
     getMovieInfo(): string {
